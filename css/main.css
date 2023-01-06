@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --green-text-color: #00FF10
+}
+
+body {
+    background-color: #221e1e
+}
+
+.green-text {
+    color: var(--green-text-color, #00FF00)
+}
+
+.centered-text {
+    text-align: center;
+}
