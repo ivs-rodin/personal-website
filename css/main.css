@@ -4,17 +4,43 @@
 }
 
 :root {
-    --green-text-color: #00FF10
+    --index: calc(1vw + 1vh)
 }
 
 body {
-    background-color: #221e1e
+    background-color: #010101;
+    color: #fff;
+    line-height: 1.55;
 }
 
-.green-text {
-    color: var(--green-text-color, #00FF00)
+.main-header {
+    position: relative;
 }
 
-.centered-text {
+.layers {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+}
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+.layer__header {
+    z-index: 1;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.layers__title {
+    font-size: calc(var(--index) * 2.5);
+    letter-spacing: calc(var(--index) / 2.25);
+}
+.layers__caption {
+    font-size: calc(var(--index) / 1.7);
+    letter-spacing: calc(var(--index) / 4.25);
 }
