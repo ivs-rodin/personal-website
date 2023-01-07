@@ -13,6 +13,22 @@ body {
     line-height: 1.55;
 }
 
+.scroll-container,
+.scroll-area {
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.scroll-container {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-area {
+    scroll-snap-align: center;
+}
+
 .main-header {
     position: relative;
 }
@@ -43,4 +59,11 @@ body {
 .layers__caption {
     font-size: calc(var(--index) / 1.7);
     letter-spacing: calc(var(--index) / 4.25);
+}
+.layers__base {
+    height: 400%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
