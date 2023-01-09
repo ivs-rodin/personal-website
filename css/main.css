@@ -95,7 +95,7 @@ body {
     letter-spacing: calc(var(--index) / 4.25);
 }
 .layers__base {
-    height: 400%;
+    height: 500%;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
