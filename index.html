@@ -8,59 +8,54 @@
 
   <title>Document</title>
 
+  <!-- <link rel="stylesheet" href="./css/main.css"> -->
   <link rel="stylesheet" href="./css/main.css">
 
 </head>
 <body>
-  
   <div class="container">
     <nav class="navbar">
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#work">Work</a></li>
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#group-1">Education</a></li>
+        <li><a href="#group-2">Work</a></li>
       </ul>
     </nav>
   </div>
 
-
-  <div class="scroll-container">
-    <div class="scroll-area">
-      <header class="main-header" id="home">
-        <div class="layers">
-          <div class="layer__header">
-            <div class="layers__caption">Welcome to my website</div>
-            <div class="layers__title">Ivan Rodin</div>
-          </div>
-          <div class="layer layers__base" style="background-image: url(./img/background.jpg);"></div>
-        </div>
+  <div class="parallax_wrapper">  
+    <div class="parallax_group intro_screen" id="intro">
+      <!-- Ivan Rodin personal website -->
+      <header class="intro_header">
+        <div class="intro_caption">Welcome to my website</div>
+        <div class="intro_title">Ivan Rodin</div>
       </header>
     </div>
 
-    <div class="scroll-area">
-      <header class="main-header" id="education">
-        <div class="layers">
-          <div class="layer__header">
-            <div class="layers__caption">Comming soon ...</div>
-            <div class="layers__title">Education</div>
-          </div>
-          <!-- <div class="layer layers__base" style="background-image: url(./img/background.jpg);"></div> -->
-        </div>
-      </header>
+
+    <div class="parallax_group" id="group-1">
+      <div class="parallax_layer base_layer">
+        Education
+      </div>
+      <div class="parallax_layer mid_layer">
+        Comming soon...
+      </div>
     </div>
 
-    <div class="scroll-area">
-      <header class="main-header" id="work">
-        <div class="layers">
-          <div class="layer__header">
-            <div class="layers__caption">Comming soon ...</div>
-            <div class="layers__title">Work</div>
-          </div>
-          <!-- <div class="layer layers__base" style="background-image: url(./img/background.jpg);"></div> -->
-        </div>
-      </header>
+    <div class="parallax_group" id="group-2">
+      <div class="parallax_layer mid_layer">
+        Work
+      </div>
+      <div class="parallax_layer top_layer">
+        Comming soon...
+      </div>
     </div>
-  </div>
+
+
+    <div class="parallax_group outro_screen" id="outro">
+      The end
+    </div>
+  </div> 
 
 </body>
 </html>
