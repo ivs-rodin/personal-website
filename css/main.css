@@ -52,6 +52,8 @@ body .parallax_wrapper .intro_screen {
   height: 100vh;
   background-color: tomato;
   background-image: url("/img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -66,6 +66,8 @@ body {
             height: 100vh;
             background-color: tomato;
             background-image: url("/img/background.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
             @include allign-center;
         }
 
