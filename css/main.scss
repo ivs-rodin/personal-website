@@ -79,7 +79,7 @@ body {
         .intro_screen {
             height: 100vh;
             background-color: tomato;
-            background-image: url("/img/background.jpg");
+            background-image: "./img/background.jpg";
             background-repeat: no-repeat;
             background-size:cover;
             @include allign-center;
@@ -137,7 +137,7 @@ body {
         #group-1 > .base_layer{
             z-index: 0;
             // background-color: rgba(46, 236, 179, 0.3);
-            background-image: url("/img/msu.jpg");
+            background-image: "./img/msu.jpg";
             background-repeat: no-repeat;
             background-size:cover;
             @include title-text;
