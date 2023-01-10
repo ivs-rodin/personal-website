@@ -14,6 +14,20 @@
     text-align: center;
 }
 
+@mixin title-text {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: calc(var(--index) * 2.5);
+    letter-spacing: calc(var(--index) / 2.25);
+}
+
+@mixin caption-text {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: calc(var(--index) / 1.7);
+    letter-spacing: calc(var(--index) / 4.25);
+}
+
 body {
     font-family: sans-serif;
     font-size: 4em;
@@ -109,16 +123,12 @@ body {
             // @include allign-center;
             .intro_header {
                 z-index: 1;
-                text-transform: uppercase;
-                font-weight: 900;
             }
             .intro_title {
-                font-size: calc(var(--index) * 2.5);
-                letter-spacing: calc(var(--index) / 2.25);
+                @include title-text;
             }
             .intro_caption {
-                font-size: calc(var(--index) / 1.7);
-                letter-spacing: calc(var(--index) / 4.25);
+                @include caption-text;
             }
         }
         #group-1 {
@@ -130,23 +140,28 @@ body {
             background-image: url("/img/msu.jpg");
             background-repeat: no-repeat;
             background-size:cover;
+            @include title-text;
         }
 
         #group-1 > .mid_layer{
             z-index: -1;
-            background-color: rgba(46, 11, 179, 0.3);
+            @include caption-text;
         }
  
         #group-2 {}
 
         #group-2 > .top_layer{
             background-color: green;
+            @include caption-text;
         }
 
         #group-2 > .mid_layer{
             background-color: pink;
+            @include title-text;
         }
 
-        #outro {}
+        #outro {
+            @include title-text;
+        }
     }
 }

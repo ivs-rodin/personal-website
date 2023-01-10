@@ -94,14 +94,16 @@ body .parallax_wrapper #intro {
 }
 body .parallax_wrapper #intro .intro_header {
   z-index: 1;
-  text-transform: uppercase;
-  font-weight: 900;
 }
 body .parallax_wrapper #intro .intro_title {
+  text-transform: uppercase;
+  font-weight: 900;
   font-size: calc(var(--index) * 2.5);
   letter-spacing: calc(var(--index) / 2.25);
 }
 body .parallax_wrapper #intro .intro_caption {
+  text-transform: uppercase;
+  font-weight: 900;
   font-size: calc(var(--index) / 1.7);
   letter-spacing: calc(var(--index) / 4.25);
 }
@@ -110,14 +112,35 @@ body .parallax_wrapper #group-1 > .base_layer {
   background-image: url("/img/msu.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: calc(var(--index) * 2.5);
+  letter-spacing: calc(var(--index) / 2.25);
 }
 body .parallax_wrapper #group-1 > .mid_layer {
   z-index: -1;
-  background-color: rgba(46, 11, 179, 0.3);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: calc(var(--index) / 1.7);
+  letter-spacing: calc(var(--index) / 4.25);
 }
 body .parallax_wrapper #group-2 > .top_layer {
   background-color: green;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: calc(var(--index) / 1.7);
+  letter-spacing: calc(var(--index) / 4.25);
 }
 body .parallax_wrapper #group-2 > .mid_layer {
   background-color: pink;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: calc(var(--index) * 2.5);
+  letter-spacing: calc(var(--index) / 2.25);
+}
+body .parallax_wrapper #outro {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: calc(var(--index) * 2.5);
+  letter-spacing: calc(var(--index) / 2.25);
 }/*# sourceMappingURL=main.css.map */
