@@ -51,7 +51,7 @@ body .parallax_wrapper {
 body .parallax_wrapper .intro_screen {
   height: 100vh;
   background-color: tomato;
-  background-image: url("/img/background.jpg");
+  background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -109,7 +109,7 @@ body .parallax_wrapper #intro .intro_caption {
 }
 body .parallax_wrapper #group-1 > .base_layer {
   z-index: 0;
-  background-image: url("/img/msu.jpg");
+  background-image: url(../img/msu.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-transform: uppercase;
