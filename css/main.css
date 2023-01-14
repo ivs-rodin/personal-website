@@ -12,35 +12,6 @@ body {
   font-size: 4em;
   color: white;
 }
-body .navbar {
-  position: fixed;
-  top: 0;
-  z-index: 3;
-  display: flex;
-  width: 100%;
-  height: calc(var(--index) * 1.4);
-  background: rgba(0, 0, 0, 0.7);
-}
-body .navbar ul {
-  display: flex;
-  list-style: none;
-  width: 100%;
-  justify-content: center;
-}
-body .navbar ul li {
-  display: flex;
-  padding: calc(var(--index) / 2);
-}
-body .navbar ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: calc(var(--index) / 2.5);
-  letter-spacing: calc(var(--index) / 5.25);
-  color: #f4f4f4;
-}
-body .navbar ul li a:hover {
-  color: skyblue;
-}
 body .parallax_wrapper {
   height: 100vh;
   overflow-x: hidden;

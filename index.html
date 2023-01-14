@@ -1,61 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Document</title>
-
-  <!-- <link rel="stylesheet" href="./css/main.css"> -->
-  <link rel="stylesheet" href="./css/main.css">
-
-</head>
-<body>
-  <div class="container">
-    <nav class="navbar">
-      <ul>
-        <li><a href="#intro">Home</a></li>
-        <li><a href="#group-1">Education</a></li>
-        <li><a href="#group-2">Work</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <div class="parallax_wrapper">  
-    <div class="parallax_group intro_screen" id="intro">
-      <!-- Ivan Rodin personal website -->
-      <header class="intro_header">
-        <div class="intro_caption">Welcome to my website</div>
-        <div class="intro_title">Ivan Rodin</div>
-      </header>
-    </div>
-
-
-    <div class="parallax_group" id="group-1">
-      <div class="parallax_layer base_layer">
-        Education
-      </div>
-      <div class="parallax_layer mid_layer">
-        Comming soon...
-      </div>
-    </div>
-
-    <div class="parallax_group" id="group-2">
-      <div class="parallax_layer mid_layer">
-        Work
-      </div>
-      <div class="parallax_layer top_layer">
-        Comming soon...
-      </div>
-    </div>
-
-
-    <div class="parallax_group outro_screen" id="outro">
-      The end
-    </div>
-  </div> 
-
-</body>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script src="index.js" type="text/babel"></script>
+    </body>
 </html>
