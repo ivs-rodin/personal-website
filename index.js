@@ -1,34 +1,34 @@
 function MainContent() {
     return (
-        <div class="parallax_wrapper">  
-            <div class="parallax_group intro_screen" id="intro">
-            <header class="intro_header">
-                <div class="intro_caption">Welcome to my website</div>
-                <div class="intro_title">Ivan Rodin</div>
+        <div className="parallax_wrapper">  
+            <div className="parallax_group intro_screen" id="intro">
+            <header className="intro_header">
+                <div className="intro_caption">Welcome to my website</div>
+                <div className="intro_title">Ivan Rodin</div>
             </header>
             </div>
 
 
-            <div class="parallax_group" id="group-1">
-            <div class="parallax_layer base_layer">
+            <div className="parallax_group" id="group-1">
+            <div className="parallax_layer base_layer">
                 Education
             </div>
-            <div class="parallax_layer mid_layer">
+            <div className="parallax_layer mid_layer">
                 Comming soon...
             </div>
             </div>
 
-            <div class="parallax_group" id="group-2">
-            <div class="parallax_layer mid_layer">
+            <div className="parallax_group" id="group-2">
+            <div className="parallax_layer mid_layer">
                 Work
             </div>
-            <div class="parallax_layer top_layer">
+            <div className="parallax_layer top_layer">
                 Comming soon...
             </div>
             </div>
 
 
-            <div class="parallax_group outro_screen" id="outro">
+            <div className="parallax_group outro_screen" id="outro">
             The end
             </div>
         </div>
@@ -38,8 +38,8 @@ function MainContent() {
 ReactDOM.render(
     <div>
         {/* <div>
-            <div class="container">
-            <nav class="navbar">
+            <div className="container">
+            <nav className="navbar">
             <ul>
                 <li><a href="#intro">Home</a></li>
                 <li><a href="#group-1">Education</a></li>
