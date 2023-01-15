@@ -1,16 +1,5 @@
-ReactDOM.render(
-    <div>
-        {/* <div>
-            <div class="container">
-            <nav class="navbar">
-            <ul>
-                <li><a href="#intro">Home</a></li>
-                <li><a href="#group-1">Education</a></li>
-                <li><a href="#group-2">Work</a></li>
-            </ul>
-            </nav>
-        </div>, */}
-
+function MainContent() {
+    return (
         <div class="parallax_wrapper">  
             <div class="parallax_group intro_screen" id="intro">
             <header class="intro_header">
@@ -43,4 +32,21 @@ ReactDOM.render(
             The end
             </div>
         </div>
+    )
+}
+
+ReactDOM.render(
+    <div>
+        {/* <div>
+            <div class="container">
+            <nav class="navbar">
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#group-1">Education</a></li>
+                <li><a href="#group-2">Work</a></li>
+            </ul>
+            </nav>
+        </div>, */}
+
+        <MainContent />
     </div> , document.getElementById("root"))
