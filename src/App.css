@@ -22,7 +22,7 @@ body .parallax_wrapper {
 body .parallax_wrapper .intro_screen {
   height: 100vh;
   background-color: tomato;
-  background-image: url(../img/background.jpg);
+  background-image: url(../public/img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -80,7 +80,7 @@ body .parallax_wrapper #intro .intro_caption {
 }
 body .parallax_wrapper #group-1 > .base_layer {
   z-index: 0;
-  background-image: url(../img/msu.jpg);
+  background-image: url(../public/img/msu.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-transform: uppercase;
@@ -114,4 +114,4 @@ body .parallax_wrapper #outro {
   font-weight: 900;
   font-size: calc(var(--index) * 2.5);
   letter-spacing: calc(var(--index) / 2.25);
-}/*# sourceMappingURL=main.css.map */
+}
