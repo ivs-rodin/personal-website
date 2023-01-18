@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.31220a82.css",
+    "main.js": "/static/js/main.8f65a2dc.js",
+    "static/media/background.jpg": "/static/media/background.0035284b16724190dd4b.jpg",
+    "static/media/msu.jpg": "/static/media/msu.2edd3d85d99f9f778c85.jpg",
+    "index.html": "/index.html",
+    "main.31220a82.css.map": "/static/css/main.31220a82.css.map",
+    "main.8f65a2dc.js.map": "/static/js/main.8f65a2dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31220a82.css",
+    "static/js/main.8f65a2dc.js"
+  ]
+}
