@@ -8,139 +8,33 @@
 }
 
 body {
+  height: 100vh;
   font-family: sans-serif;
   font-size: 4em;
   color: white;
 }
-body .navbar {
-  position: fixed;
-  top: 0;
-  z-index: 3;
+body .intro_page {
   display: flex;
-  width: 100%;
-  height: calc(var(--index) * 1.4);
-  background: rgba(0, 0, 0, 0.7);
-}
-body .navbar ul {
-  display: flex;
-  list-style: none;
-  width: 100%;
   justify-content: center;
-}
-body .navbar ul li {
-  display: flex;
-  padding: calc(var(--index) / 2);
-}
-body .navbar ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: calc(var(--index) / 2.5);
-  letter-spacing: calc(var(--index) / 5.25);
-  color: #f4f4f4;
-}
-body .navbar ul li a:hover {
-  color: skyblue;
-}
-body .parallax_wrapper {
+  align-items: center;
+  text-align: center;
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 300px;
-  scroll-behavior: smooth;
-}
-body .parallax_wrapper .intro_screen {
-  height: 100vh;
-  background-color: tomato;
-  background-image: url(../../public/img/background.jpg);
-  background-repeat: no-repeat;
+  background: url("../../public/img/background.jpg") no-repeat center center fixed;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
-body .parallax_wrapper .outro_screen {
-  height: 100vh;
-  background-color: teal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-body .parallax_wrapper .parallax_group {
-  position: relative;
-  height: 100vh;
-  transform-style: preserve-3d;
-}
-body .parallax_wrapper .parallax_group .parallax_layer {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-body .parallax_wrapper .parallax_group .base_layer {
-  transform: translateZ(-300px) scale(2);
-}
-body .parallax_wrapper .parallax_group .mid_layer {
-  transform: translateZ(0);
-}
-body .parallax_wrapper .parallax_group .top_layer {
-  transform: translateZ(210px) scale(0.3);
-}
-body .parallax_wrapper #intro {
-  z-index: 1;
-}
-body .parallax_wrapper #intro .intro_header {
-  z-index: 1;
-}
-body .parallax_wrapper #intro .intro_title {
+body .intro_page .intro_group .intro_header {
+  display: block;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: calc(var(--index) * 2.5);
+  font-size: calc(var(--index) * 1.5);
   letter-spacing: calc(var(--index) / 2.25);
+  color: rgb(209, 241, 219);
 }
-body .parallax_wrapper #intro .intro_caption {
+body .intro_page .intro_group .intro_type_text {
+  display: block;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: calc(var(--index) / 1.7);
-  letter-spacing: calc(var(--index) / 4.25);
-}
-body .parallax_wrapper #group-1 > .base_layer {
-  z-index: 0;
-  background-image: url(../../public/img/msu.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: calc(var(--index) * 2.5);
+  font-size: calc(var(--index) * 1.5);
   letter-spacing: calc(var(--index) / 2.25);
-}
-body .parallax_wrapper #group-1 > .mid_layer {
-  z-index: -1;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: calc(var(--index) / 1.7);
-  letter-spacing: calc(var(--index) / 4.25);
-}
-body .parallax_wrapper #group-2 > .top_layer {
-  background-color: green;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: calc(var(--index) / 1.7);
-  letter-spacing: calc(var(--index) / 4.25);
-}
-body .parallax_wrapper #group-2 > .mid_layer {
-  background-color: pink;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: calc(var(--index) * 2.5);
-  letter-spacing: calc(var(--index) / 2.25);
-}
-body .parallax_wrapper #outro {
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: calc(var(--index) * 2.5);
-  letter-spacing: calc(var(--index) / 2.25);
+  color: rgb(209, 241, 219);
 }/*# sourceMappingURL=App.css.map */
