@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.31220a82.css",
-    "main.js": "/static/js/main.8f65a2dc.js",
+    "main.css": "/static/css/main.b321490c.css",
+    "main.js": "/static/js/main.2912adb8.js",
     "static/media/background.jpg": "/static/media/background.0035284b16724190dd4b.jpg",
-    "static/media/msu.jpg": "/static/media/msu.2edd3d85d99f9f778c85.jpg",
+    "static/media/work.jpg": "/static/media/work.ab901cb8ae0a6b13fc90.jpg",
     "index.html": "/index.html",
-    "main.31220a82.css.map": "/static/css/main.31220a82.css.map",
-    "main.8f65a2dc.js.map": "/static/js/main.8f65a2dc.js.map"
+    "main.b321490c.css.map": "/static/css/main.b321490c.css.map",
+    "main.2912adb8.js.map": "/static/js/main.2912adb8.js.map"
   },
   "entrypoints": [
-    "static/css/main.31220a82.css",
-    "static/js/main.8f65a2dc.js"
+    "static/css/main.b321490c.css",
+    "static/js/main.2912adb8.js"
   ]
 }
