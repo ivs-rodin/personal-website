@@ -45,4 +45,21 @@ body {
             }
         }
     }
+
+    .work_page {
+        @include allign-center;
+        height: 100vh;
+        background: url('../../public/img/work.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        .work_group {
+            .work_header {
+                display: block;
+                @include base-text;
+            }
+        }
+    }
 }

@@ -1,11 +1,13 @@
 // import './css/App.css'
 
 import Homepage from './pages/homepage';
+import Work from './pages/work';
 
 function App() {
   return (
     <div>
         <Homepage />
+        <Work />
     </div>
     // <div className="parallax_wrapper">
 

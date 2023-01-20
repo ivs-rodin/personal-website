@@ -37,4 +37,21 @@ body .intro_page .intro_group .intro_type_text {
   font-size: calc(var(--index) * 1.5);
   letter-spacing: calc(var(--index) / 2.25);
   color: rgb(209, 241, 219);
+}
+body .work_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: url("../../public/img/work.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+body .work_page .work_group .work_header {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: calc(var(--index) * 1.5);
+  letter-spacing: calc(var(--index) / 2.25);
+  color: rgb(209, 241, 219);
 }/*# sourceMappingURL=App.css.map */
