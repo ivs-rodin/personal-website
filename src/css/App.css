@@ -37,6 +37,8 @@ body .intro_page .intro_group .intro_type_text {
   font-size: calc(var(--index) * 1.5);
   letter-spacing: calc(var(--index) / 2.25);
   color: rgb(209, 241, 219);
+  font-size: calc(var(--index) / 1.2);
+  padding-top: 10vh;
 }
 body .work_page {
   display: flex;
