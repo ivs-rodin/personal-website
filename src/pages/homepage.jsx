@@ -16,7 +16,7 @@ class Homepage extends Component {
                     <h4 className='intro_type_text'>
                         <div>
                         I'm a
-                        <Typing loop='true'>
+                        <Typing loop={true}>
                             <Typing.Speed ms={50} />
                             <span>Optimization developer</span>
                             <Typing.Delay ms={1000} />
