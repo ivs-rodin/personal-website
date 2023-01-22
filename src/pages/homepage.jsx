@@ -1,8 +1,16 @@
 import React from 'react';
 import { Component } from 'react';
 import Typing from 'react-typing-animation';
+import { Parallax } from 'react-parallax';
 
+// import BackgroundIntro from '../../public/img/background.jpg'
 import '../css/App.css'
+
+// const BackgroundImage = () => (
+//     <Parallax bgImage={BackgroundIntro} strength={800}>
+//         Content goes here. Parallax height grows with content height.
+//     </Parallax>
+// );
 
 class Homepage extends Component {
     render() { 
