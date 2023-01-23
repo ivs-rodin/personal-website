@@ -2,13 +2,18 @@
 
 import Homepage from './pages/homepage';
 import Work from './pages/work';
+import { ParallaxProvider } from 'react-scroll-parallax'
 
 function App() {
   return (
-    <div>
+      <ParallaxProvider scrollAxis='vertical'>
         <Homepage />
         <Work />
-    </div>
+      </ParallaxProvider>
+    // <div>
+    //     <Homepage />
+    //     <Work />
+    // </div>
     // <div className="parallax_wrapper">
 
     //     <div className="parallax_group" id="group-1">
