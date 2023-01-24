@@ -27,7 +27,8 @@ body {
     .intro_page {
         @include allign-center;
         height: 100vh;
-        background: url('../../public/img/background.jpg') no-repeat center center fixed; 
+        background-color: rgb(18, 19, 17);
+        // background: url('../../public/img/background.jpg') no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -51,7 +52,8 @@ body {
     .work_page {
         @include allign-center;
         height: 100vh;
-        background: url('../../public/img/work.jpg') no-repeat center center fixed; 
+        background-color: rgb(58, 68, 49);
+        // background: url('../../public/img/work.jpg') no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

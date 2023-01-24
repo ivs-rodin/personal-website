@@ -19,7 +19,7 @@ body .intro_page {
   align-items: center;
   text-align: center;
   height: 100vh;
-  background: url("../../public/img/background.jpg") no-repeat center center fixed;
+  background-color: rgb(18, 19, 17);
   background-size: cover;
 }
 body .intro_page .intro_group .intro_header {
@@ -46,7 +46,7 @@ body .work_page {
   align-items: center;
   text-align: center;
   height: 100vh;
-  background: url("../../public/img/work.jpg") no-repeat center center fixed;
+  background-color: rgb(58, 68, 49);
   background-size: cover;
 }
 body .work_page .work_group .work_header {
