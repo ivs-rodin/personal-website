@@ -7,10 +7,10 @@ import { useParallax } from "react-scroll-parallax";
 
 const Work = () => {
 
-    const { ref } = useParallax({ speed: 400 });
+    // const { ref } = useParallax({ speed: 400 });
   
     return (
-        <div ref={ref} className="work_page">
+        <div className="work_page">
             <div className="work_group">
                 <header className="work_header">
                     Comming soon...

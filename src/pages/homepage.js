@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Component } from 'react';
 import Typing from 'react-typing-animation';
 import { Parallax } from 'react-parallax';
+import {useState, useEffect} from 'react';
 
 import { useParallax } from "react-scroll-parallax";
 
@@ -10,20 +11,27 @@ import '../css/App.css'
 
 const Homepage = () => {
 
-    const { ref } = useParallax({ speed: 400 });
+    const [offsetY, setOffsetY] = useState(0);
+    const handleScroll = () => setOffsetY(window.pageYOffset);
+  
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
   
     return (
         <div className="intro_page">
-            <div ref={ref} className='intro_group'>
-                <header className="intro_header">
+            <div className='intro_group'>
+                <header className="intro_header" style={{ transform: `translateY(${ -offsetY * 1.5}px) `}}>
                     <div className="intro_text">Welcome to my website</div>
                     <div className="intro_text">Ivan Rodin</div>
                 </header>
-                <h4 className='intro_type_text'>
+                {/* <h4 className='intro_type_text'>
                     <div>
                     I'm a
                     <Typing loop={true}>
-                        <Typing.Speed ms={50} />
+                        <Typing.Speed ms={200} />
                         <span>Optimization developer</span>
                         <Typing.Delay ms={1000} />
                         <Typing.Backspace count={30} />
@@ -35,7 +43,7 @@ const Homepage = () => {
                         <Typing.Backspace count={20} />
                     </Typing>
                     </div>
-                </h4>
+                </h4> */}
             </div>
         </div>
     );
