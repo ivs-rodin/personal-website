@@ -1,45 +1,43 @@
-// import './css/App.css'
+import './css/App.css'
 
-import Homepage from './pages/homepage';
-import Work from './pages/work';
+// import Homepage from './pages/homepage';
+// import Work from './pages/work';
 import { ParallaxProvider } from 'react-scroll-parallax'
-import { useEffect } from 'react';
+import {useState, useEffect} from 'react';
 
-function App() {
+
+const App = () => {
+
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-      // <ParallaxProvider scrollAxis='vertical'>
-      //   <Homepage />
-      //   <Work />
-      // </ParallaxProvider>
     <div>
-        <Homepage />
-        <Work />
+
+      <div className="intro_page">
+        <div className='intro_group'>
+            <header className="intro_header" style={{ transform: `translateY(${ -offsetY * 1.5}px) `}}>
+                <div className="intro_text">Welcome to my website</div>
+                <div className="intro_text">Ivan Rodin</div>
+            </header>
+        </div>
+      </div>
+
+      <div className="work_page">
+        <div className="work_group">
+            <header className="work_header">
+                Comming soon...
+            </header>
+        </div>
+      </div>      
+
     </div>
-    // <div className="parallax_wrapper">
-
-    //     <div className="parallax_group" id="group-1">
-    //     <div className="parallax_layer base_layer">
-    //         Education
-    //     </div>
-    //     <div className="parallax_layer mid_layer">
-    //         Comming soon...
-    //     </div>
-    //     </div>
-
-    //     <div className="parallax_group" id="group-2">
-    //     <div className="parallax_layer mid_layer">
-    //         Work
-    //     </div>
-    //     <div className="parallax_layer top_layer">
-    //         Comming soon...
-    //     </div>
-    //     </div>
-
-
-    //     <div className="parallax_group outro_screen" id="outro">
-    //     The end
-    //     </div>
-    // </div>
   );
 }
 
