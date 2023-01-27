@@ -29,13 +29,21 @@ const App = () => {
         </div>
       </div>
 
+      <div className="study_page">
+        <div className="study_group">
+            <header className="study_header">
+                Comming soon...
+            </header>
+        </div>
+      </div>      
+
       <div className="work_page">
         <div className="work_group">
             <header className="work_header">
                 Comming soon...
             </header>
         </div>
-      </div>      
+      </div>  
 
     </div>
   );

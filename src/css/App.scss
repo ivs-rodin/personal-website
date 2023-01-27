@@ -49,10 +49,28 @@ body {
         }
     }
 
-    .work_page {
+    .study_page {
         @include allign-center;
         height: 100vh;
         background-color: rgb(58, 68, 49);
+        // background: url('../../public/img/work.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        .study_group {
+            .study_header {
+                display: block;
+                @include base-text;
+            }
+        }
+    }
+
+    .work_page {
+        @include allign-center;
+        height: 100vh;
+        background-color: rgb(46, 41, 56);
         // background: url('../../public/img/work.jpg') no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
